@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HTML</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .column1{
+            background-color: lightgray;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        /*  */
+        .nav a{
+            text-decoration: none;
+            color: black;
+            padding: 20px 50px;
+        }
+        .nav a:hover{
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+        }
+        .nav{
+            margin-top: 20px;
+        }
+        .icon{
+            display: none;
+        }
+       .column1{
+        padding: 20px 5%;
+       }
+       .leftbar{
+        width: 15%;
+        background-color: lightgrey;
+        padding: 2%;
+       }
+       summary{
+        list-style: none;
+       }
+       ul{
+       list-style: none;
+       }
+       li{
+        padding: 5px;
+       }
+       .column2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       }
+       table{
+            margin-left: 10%;
+            width: 100%;
+            margin-top: 20px;
+        }
+        table, th, td {
+            font-size: xx-large;
+          border:1px solid black;
+          border-radius: 5px;
+         text-align: center;
+         border-collapse: collapse;
+        }
+       #table1 img{
+        width: 200px;
+       }
+       @media screen and (min-width:320px) and (max-width:768px) {
+        .nav{
+            display: none;
+        }
+        .icon{
+            display: block;
+            color: black;
+            margin-left: 5px;
+            padding: 10px;
+            width: 95%;
+        }
+        .nav2{
+           display: block;
+            background-color: lightgray;
+        }
+        .resp{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            text-align:right;
+            width: 99%;
+            border-radius: 0;
+        }
+        .resp a:hover{
+            background-color: grey;
+            padding: 15px;
+        }
+        .leftbar{
+        width: 100%;
+        background-color: lightgrey;
+        padding: 2%;
+       }
+        table{
+            margin-left: 10% 0%;
+            width: 100%;
+            margin-top: 20px;
+        }
+        table{
+            margin-left: 0;
+        }
+        table, th, td {
+            font-size: large;
+          border:1px solid black;
+          border-radius: 5px;
+         text-align: center;
+         border-collapse: collapse;
+        }
+       #table1 img{
+        width: 200px;
+       }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column1">
+            <div class="rxlogo" ><a href=""><img src="../Images/Logo_radix.png" class="rxlogo" alt="Radixweb" width="50px"></a></div>
+            <div class="nav2"> <a href="#" onclick="myFunction()" class="icon"><i class="fa fa-bars"></i></a></li></div>
+            <div class="nav" id="rnav">
+                <a href="../home.html">Home</a>
+                <a href="../Html/HTML-index.html" style="background-color: black; color:white; border-radius: 20px;">HTML</a>
+                <a href="./css/index-CSS.html">CSS</a>
+                <a href="./Bootstrap/index-Bootstrap.html">Bootstrap</a>
+                <a href="./JavaScript/index-js.html">JavaScript</a>
+                <a href="./Tailwind/index-tailwind.html">Tailwind</a>
+            </div>
+        </div>
+        <div class="column2">
+            <div class="leftbar">
+                <details>
+                    <summary>Day 1</summary>
+                     <ul>
+                        <li><details>
+                            <summary>Practice</summary>
+                            <ul>
+                                <li><a href="../Html/practiceTask1.html" target="_self">Practice 1</a></li>
+                                <li><a href="../Html/practicetask2.html" target="_self">Practice 2</a></li>
+                            </ul>
+                        </details></li>
+                        <li>
+                            <details>
+                                <summary>Assignment</summary>
+                                <ul>
+                                    <li><a href="./employeeDetails.html" target="_self">Assignment 1</a></li>
+                                    <li><a href="./Resume.html" target="_self">Assignment 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                     </ul>
+                </details>
+            </div>
+            <div class="sidebar">
+                <table>
+                    <tr>
+                        <th style="background-color:darkgreen;" colspan="2">Report Card</th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <label for="Name">Name : Govind Jha </label><br>
+                            <label for="Name">Class : 11th-J </label><br>
+                            <label for="Name">Roll NO. : 39 </label><br>
+                            <label for="Name">Year of passing : 2018 </label><br>
+                            <label for="Name">Stream : Science </label>
+                        </td>
+                        <td id="table1"><img src="./avatar.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Marks</th>
+                    </tr>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>A++</td>
+                    </tr>
+                    <tr>
+                        <td>Maths</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Phisics</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Chemisty</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Hindi</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Computer</td>
+                        <td>A++</td>
+                    </tr>
+                    <tr>
+                        <td>Pt</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <th>Overall Grades</th>
+                        <th>A+</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: left;" ><b>Passed And promoted</b> to Next Year with First class Grades</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;"><b>Remarks</b> : Start Practicing Maths.</td>
+                        <th style="text-align: left;">Sign :    </th>
+                    </tr>
+            
+                </table>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("rnav");
+            if(x.className == "nav"){
+                x.className += " resp"
+            }
+            else{
+                x.className = "nav"
+            }
+        }
+    </script>
+</body>
+</html>

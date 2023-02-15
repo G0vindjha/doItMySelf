@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 200px;
+            border-radius: 50%;
+            margin-left: 70%;
+            margin-top: 10px;
+        }
+        .row{
+            padding: 1%;
+            display: grid;
+            grid-template-columns: auto;
+        }
+        .columns1,.columns2{
+            border: 2px solid black;
+        }
+        .columns1{
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: lightblue;
+        }
+        .card1{
+            width: 50%;
+            margin-top: 20%;
+        }
+        .card2{
+            width: 50%;
+            padding: 4%;
+            font-size: 20px;
+            margin-left: 10%;
+        }
+        .columns2{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .card3{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 30%;
+            border: 2px solid black;
+            background-color: cornflowerblue;
+        }
+        .card4{
+            width: 70%;
+            margin: 2%;
+        }
+        .card3 a{
+            margin: 2% 1%;
+            padding: 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            border: 2px solid black;
+            background-color: white;
+        }
+        .card3 a:hover{
+            background-color: cornflowerblue;
+            color: white;
+        }
+        #personalDetails,#educationalDetails,#internships,#programmingLanguages,#personalProjects,#certificates,#languages{
+            display: none;
+            font-size: 30px;
+        }
+        #personalDetails:target{
+            display: block;
+        }
+        #educationalDetails:target{
+            display: block;
+        }
+        #internships:target{
+            display: block;
+        }
+        #programmingLanguages:target{
+            display: block;
+        }
+        #personalProjects:target{
+            display: block;
+        }
+        #certificates:target{
+            display: block;
+        }
+        #languages:target{
+            display: block;
+        }
+        @media screen and (min-width:320px) and (max-width:768px) {
+            img{
+                width: 200px;
+                border-radius: 50%;
+                margin-left: 20%;
+                margin-top: 10px;
+            }
+            .columns1{
+                display: grid;
+                grid-template-columns: auto;
+                background-color: lightblue;
+            }
+            .card1{
+                width: 100%;
+                margin: 0 0;
+            } 
+            .card2{
+                width: 100%;
+                padding: 0;
+                font-size: 20px;
+                margin-left: 0;
+                text-align: center;
+            } 
+            .columns2{
+                display: grid;
+                grid-template-columns: auto;
+                width: 100%;
+            }
+            .card3{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                width: 100%;
+                border: 2px solid black;
+                background-color: cornflowerblue;
+            }
+            .card4{
+                width: 100%;
+                margin: 2%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="columns1">
+                <div class="card1">
+                    <img src="./avatar.png" alt="User's Image">
+                </div>
+                <div class="card2">
+                   <h1>Govind Jha</h1>
+                    <label for="Discription">I am currently working with radixweb. At Radixweb i am working as Software Engineer Trainee.
+                        I have completed 3 months of internship as PHP Developer trainee in Orena Solutions vadodara.</label>
+                </div>
+            </div>
+            <div class="columns2">
+                <div class="card3">
+                    <a href="#personalDetails">Personal Details</a>
+                    <a href="#educationalDetails">Educational Details</a>
+                    <a href="#internships">Internships</a>
+                    <a href="#programmingLanguages">Programming Languages Known</a>
+                    <a href="#personalProjects">Personal Projects</a>
+                    <a href="#certificates">Certificates</a>
+                    <a href="#languages">Languages</a>
+                </div>
+                <div class="card4">
+                    <div id="personalDetails">
+                        <h2>Contact</h2>
+                        <h3>Phone</h3>
+                        <label for="">9106739843</label>
+                        <h3>Email</h3>
+                        <label for="">jhag2491@gmail.com</label>
+                        <h3>Address</h3>
+                        <label for="">D-103 Chandamani Residency Chankheda Ahmedabad</label>
+                    </div>
+                    <div id="educationalDetails">
+                        <h2>Education</h2>
+                        <dl>
+                            <dt><h3>SSC</h3>
+                                <dd>
+                                    <label for="">S.V Patel Eng. School, Vapi</label><br>
+                                    <label for="">03/2014 - 04/2017</label><br>
+                                    <label for="">10th GSEB Board -82.68%</label><br>
+                                </dd>
+                            </dt>
+                            <dt><h3>HSC</h3>
+                                <dd>
+                                    <label for="">S.V. Daman Eng. School</label><br>
+                                    <label for="">05/2017 - 03/2019</label><br>
+                                    <label for="">12th GSHEB Board -75.30%</label><br>
+                                </dd>
+                            </dt>
+                            <dt><h3>B.TECH</h3>
+                                <dd>
+                                    <label for="">Parul Institute of Engineering and Technology</label><br>
+                                    <label for="">04/2019 - present</label><br>
+                                    <label for="">CSE -8.1</label><br>
+                                </dd>
+                            </dt>
+                        </dl>
+                    </div>
+                    <div id="internships">
+                        <h2>internship</h2>
+                        <ul>
+                            <li>Web Development Intern at LetsGrowMore</li><br>
+                            <li>PHP Developer intern At Orena solutions</li><br>
+                            <li>Software Engineer Trainee at Radixweb</li><br><br><br>
+                        </ul>
+                    </div>
+                    <div id="programmingLanguages">
+                            <h2>Programming Languages Known</h2>
+                            <dl>
+                                <dt>HTML/CSS
+                                    <dd>Intermidiate</dd>
+                                </dt><br>
+                                <dt>JavaScript
+                                    <dd>Intermidiate</dd>
+                                </dt><br>
+                                <dt>PHP
+                                    <dd>Intermidiate</dd>
+                                </dt><br>
+                                <dt>C/C++
+                                    <dd>Intermidiate</dd>
+                                </dt><br>
+                                <dt>MySql
+                                    <dd>Intermidiate</dd>
+                                </dt><br>
+                                <dt>Python
+                                    <dd>Basic</dd>
+                                </dt>
+                            </dl>
+                    </div>
+                    <div id="personalProjects">
+                        <h2>Personal Projects</h2>
+                        <ul>
+                            <li>Elecronic Hub Webpage</li><br>
+                            <li>My Food Home Website</li><br>
+                            <li>Instagram clone in Android Studio</li><br>
+                            <li>Multiplicative Inverse Calculator Website</li><br>
+                            <li>Notes Management Website</li><br>
+                            <li>News Webpage</li><br>
+                            <li>Health Care card website</li><br><br><br><br>
+                        </ul>
+                    </div>
+                    <div id="certificates">
+                        <h2>Certificates</h2>
+                        <ul>
+                            <li>The Fundamental of digital marketing of Google Digital Garage</li><br>
+                            <li>Deep Learning with Python Of Great Learning</li><br>
+                            <li>Participation Certificate in Pannel discussion of PIET</li><br>
+                            <li>Learning Data Science Using Python of PIET</li><br>
+                            <li>AR/VR Workshop of PIET</li>
+                        </ul>
+                    </div>
+                    <div id="languages">
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>Hindi</li>
+                            <li>English</li>
+                            <li>Gujarati</li>
+                            <li>Maithili</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

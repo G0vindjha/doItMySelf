@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CSS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .column1{
+            background-color: lightgray;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        /*  */
+        .nav a{
+            text-decoration: none;
+            color: black;
+            padding: 20px 50px;
+        }
+        p{
+            text-align: justify;
+        }
+        .nav a:hover{
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+        }
+        .nav{
+            margin-top: 20px;
+        }
+        .icon{
+            display: none;
+        }
+       .column1{
+        padding: 20px 5%;
+       }
+       .leftbar{
+        width: 17%;
+        background-color: lightgrey;
+        padding: 2%;
+       }
+       summary{
+        list-style: none;
+       }
+       ul{
+       list-style: none;
+       }
+       li{
+        padding: 5px;
+       }
+       .column2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       }
+       .sidecontainer{
+        width: 80%;
+       }
+      .sidemain{
+        width:100%;
+        margin: 2%;
+      }
+       table{
+            border-collapse: collapse;
+        }
+        hr{
+            border-color: darkslateblue;
+        }
+        .sidebar{
+            background-color: darkslateblue;
+            color: white;
+            padding-left: 10px;
+            border: 2px solid darkslateblue;
+        }
+        .sidemain img{ 
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+        h2{
+            color: green;
+        }
+        h3{
+            color: greenyellow;
+        }
+       @media screen and (min-width:320px) and (max-width:768px) {
+        .nav{
+            display: none;
+        }
+        .icon{
+            display: block;
+            color: black;
+            margin-left: 5px;
+            padding: 10px;
+            width: 95%;
+        }
+        .nav2{
+           display: block;
+            background-color: lightgray;
+        }
+        .resp{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            text-align:right;
+            width: 99%;
+            border-radius: 0;
+        }
+        .resp a:hover{
+            background-color: grey;
+            padding: 15px;
+        }
+        .leftbar{
+        width: 100%;
+        background-color: lightgrey;
+        padding: 2%;
+       }
+       .sidecontainer{
+        width: 100%;
+       }
+       .sidemain{
+        width: 98%;
+        margin: 0;
+       }
+       tr{
+        display: grid;
+        grid-template-columns: auto;
+       }
+       .sidemain img{ 
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin-left: 20%;
+        }
+        .namehome{
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column1">
+            <div class="rxlogo" ><a href=""><img src="../Images/Logo_radix.png" class="rxlogo" alt="Radixweb" width="50px"></a></div>
+            <div class="nav2"> <a href="#" onclick="myFunction()" class="icon"><i class="fa fa-bars"></i></a></li></div>
+            <div class="nav" id="rnav">
+                <a href="../home.html">Home</a>
+                <a href="../Html/HTML-index.html">HTML</a>
+                <a href="./css/index-CSS.html" style="background-color: black; color:white; border-radius: 20px;">CSS</a>
+                <a href="./Bootstrap/index-Bootstrap.html">Bootstrap</a>
+                <a href="./JavaScript/index-js.html">JavaScript</a>
+                <a href="./Tailwind/index-tailwind.html">Tailwind</a>
+            </div>
+        </div>
+        <div class="column2">
+            <div class="leftbar">
+               <ul>
+                <li>
+                    <details>
+                        <summary> <strong>Day 1
+                        </strong> </summary>
+                         <ul>
+                            <li><details>
+                                <summary>Practice</summary>
+                                <ul>
+                                    <li><a href="../css/practicetask1.html" target="_self">Practice 1</a></li>
+                                    <li><a href="../css/practicetask2.html" target="_self">Practice 2</a></li>
+                                    <li><a href="../css/practice task3.html" target="_self">Practice 3</a></li>
+                                    <li><a href="../css/practicetask4.html" target="_self">Practice 4</a></li>
+                                </ul>
+                            </details></li>
+                            <li>
+                                <details>
+                                    <summary>Assignment</summary>
+                                    <ul>
+                                        <li><a href="../css/Resume1.html" target="_self">Assignment 1</a></li>
+                                        <li><a href="../css/Resume.html" target="_self">Assignment 2</a></li>
+                                        <li><a href="../css/Assignment2.html" target="_self">Assignment 3</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                         </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary> <strong>Day 2
+                        </strong> </summary>
+                         <ul>
+                            <li><details>
+                                <summary>Practice</summary>
+                                <ul>
+                                    <li><a href="../css/flexboxdirection.html" target="_self">Practice 1</a></li>
+                                    <li><a href="../css/practice_flexbox_galary.html" target="_self">Practice 2</a></li>
+                                    <li><a href="../css/bordercolorchange.html" target="_self">Practice 3</a></li>
+                                    <li><a href="../css/flexboxdirection.html" target="_self">Practice 4</a></li>
+                                    <li><a href="../css/hideelement.html" target="_self">Practice 5</a></li>
+                                    <li><a href="../css/changefontsize.html" target="_self">Practice 6</a></li>
+                                    <li><a href="../css/Changebackground.html" target="_self">Practice 7</a></li>
+                                </ul>
+                            </details></li>
+                            <li>
+                                <details>
+                                    <summary>Assignment</summary>
+                                    <ul>
+                                        <li><a href="./Day2-assignmnet1.html" target="_self">Assignment 1</a></li>
+                                        <li><a href="./Day-2Assignment2.html" target="_self">Assignment 2</a></li>
+                                        <li><a href="./additionalTask1.html" target="_self">Assignment 3</a></li>
+                                        <li><a href="./additionalTask3.html" target="_self">Assignment 4</a></li>
+                                        <li><a href="../css/AdditionalTask4/" target="_self">Assignment 5</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                         </ul>
+                    </details>
+                </li>
+               </ul>
+            </div>
+            <div class="sidecontainer">
+              <div class="sidemain">
+                <div>
+                    <table>
+                        <tr style="background-color:lightgreen;">
+                            <td><img class="avtimg" src="./avatar.png" alt=""></td>
+                            <td colspan="2"><h2 class="namehome" style="color: black;">GOVIND JHA</h2>
+                                <h3 style="color: black;" class="namehome">Full Stack Developer</h3>
+                               <p> I am currently working with radixweb. At Radixweb i am working as Software Engineer Trainee.
+                                I have completed 3 months of internship as PHP Developer trainee in Orena Solutions vadodara.</p>
+                            </td>
+                           <br>
+                        </tr>
+                        <tr>
+                            <td class="sidebar" >
+                                <h2>Contact</h2>
+                                <h3>Phone</h3>
+                                    <label for="">9106739843</label>
+                                    <h3>Email</h3>
+                                    <label for="">jhag2491@gmail.com</label>
+                                    <h3>Address</h3>
+                                    <label for="">D-103 Chandamani Residency Chankheda Ahmedabad</label>
+                            </td>
+                            <td class="upperrsidebar">
+                                <div>
+                                    <div style="margin-left:10px;"><h2>Programming Languages Known</h2>
+                                        <dl>
+                                            <dt>HTML/CSS
+                                                <dd>Intermidiate</dd>
+                                            </dt><br>
+                                            <dt>JavaScript
+                                                <dd>Intermidiate</dd>
+                                            </dt><br>
+                                            <dt>PHP
+                                                <dd>Intermidiate</dd>
+                                            </dt><br>
+                                            <dt>C/C++
+                                                <dd>Intermidiate</dd>
+                                            </dt><br>
+                                            <dt>MySql
+                                                <dd>Intermidiate</dd>
+                                            </dt><br>
+                                            <dt>Python
+                                                <dd>Basic</dd>
+                                            </dt>
+                                        </dl></div>
+                                </div>
+                            </td>
+                            <td class="upperrsidebar">
+                               <div>
+                                <div style="margin-left: 10px;">
+                                    <h2>internship</h2>
+                                <ul>
+                                    <li>Web Development Intern at LetsGrowMore</li><br>
+                                    <li>PHP Developer intern At Orena solutions</li><br>
+                                    <li>Software Engineer Trainee at Radixweb</li><br><br><br>
+                                </ul>
+                                
+                                <h2>Languages</h2>
+                                <ul>
+                                    <li>Hindi</li>
+                                    <li>English</li>
+                                    <li>Gujarati</li>
+                                    <li>Maithili</li>
+                                </ul></div><br>
+                               </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sidebar"><h2>Education</h2>
+                                <dl>
+                                    <dt><h3>SSC</h3>
+                                        <dd>
+                                            <label for="">S.V Patel Eng. School, Vapi</label><br>
+                                            <label for="">03/2014 - 04/2017</label><br>
+                                            <label for="">10th GSEB Board -82.68%</label><br>
+                                        </dd>
+                                    </dt>
+                                    <dt><h3>HSC</h3>
+                                        <dd>
+                                            <label for="">S.V. Daman Eng. School</label><br>
+                                            <label for="">05/2017 - 03/2019</label><br>
+                                            <label for="">12th GSHEB Board -75.30%</label><br>
+                                        </dd>
+                                    </dt>
+                                    <dt><h3>B.TECH</h3>
+                                        <dd>
+                                            <label for="">Parul Institute of Engineering and Technology</label><br>
+                                            <label for="">04/2019 - present</label><br>
+                                            <label for="">CSE -8.1</label><br>
+                                        </dd>
+                                    </dt>
+                                </dl>
+                            </td>
+                            <td class="lowerrsidebar">
+                                <div>
+                                    <div style="margin-left: 10px;"><h2>Personal Projects</h2>
+                                        <ul>
+                                            <li>Elecronic Hub Webpage</li><br>
+                                            <li>My Food Home Website</li><br>
+                                            <li>Instagram clone in Android Studio</li><br>
+                                            <li>Multiplicative Inverse Calculator Website</li><br>
+                                            <li>Notes Management Website</li><br>
+                                            <li>News Webpage</li><br>
+                                            <li>Health Care card website</li><br><br><br><br>
+                                        </ul></div>
+                                </div>
+                            </td>
+                            <td class="lowerrsidebar">
+                                <div>
+                                  <div style="margin-left: 10px;"><h2>Certificates</h2>
+                                        <ul>
+                                            <li>The Fundamental of digital marketing of Google Digital Garage</li><br>
+                                            <li>Deep Learning with Python Of Great Learning</li><br>
+                                            <li>Participation Certificate in Pannel discussion of PIET</li><br>
+                                            <li>Learning Data Science Using Python of PIET</li><br>
+                                            <li>AR/VR Workshop of PIET</li><br><br><br><br><br><br><br><br>
+                                        </ul></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("rnav");
+            if(x.className == "nav"){
+                x.className += " resp"
+            }
+            else{
+                x.className = "nav"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Index</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .column1{
+            background-color: lightgray;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        /*  */
+        .nav a{
+            text-decoration: none;
+            color: black;
+            padding: 20px 50px;
+        }
+        .nav a:hover{
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+        }
+        .nav{
+            margin-top: 20px;
+        }
+        .icon{
+            display: none;
+        }
+       .column1{
+        padding: 20px 5%;
+       }
+       @media screen and (min-width:320px) and (max-width:425px) {
+        .nav{
+            display: none;
+        }
+        .icon{
+            display: block;
+            color: black;
+            margin-left: 5px;
+            padding: 10px;
+            width: 95%;
+        }
+        .nav2{
+           display: block;
+            background-color: lightgray;
+        }
+        .resp{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            text-align:right;
+            width: 99%;
+            border-radius: 0;
+        }
+        .resp a:hover{
+            background-color: grey;
+            padding: 15px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column1">
+            <div class="rxlogo" ><a href=""><img src="../Image/Logo_radix.png" class="rxlogo" alt="Radixweb" width="50px"></a></div>
+            <div class="nav2"> <a href="#" onclick="myFunction()" class="icon"><i class="fa fa-bars"></i></a></li></div>
+            <div class="nav" id="rnav">
+                <a href="./home.html">Home</a>
+                <a href="./home.html">Git</a>
+                <a href="./home.html">HTML</a>
+                <a href="./home.html">CSS</a>
+                <a href="./home.html">Bootstrap</a>
+                <a href="./home.html">JavaScript</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("rnav");
+            if(x.className == "nav"){
+                x.className += " resp"
+            }
+            else{
+                x.className = "nav"
+            }
+        }
+    </script>
+</body>
+</html>

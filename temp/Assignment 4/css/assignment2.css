@@ -1,0 +1,62 @@
+.sidemain .leftbar{
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    float: left;
+    border: 1px solid black;
+}
+.sidemain .sidebar{
+    width: 29.62%;
+    height: 100vh;
+    background-color: lightgray;
+    position: sticky;
+    float: right;
+    border: 1px solid black;
+}
+.sidemain h1{
+    text-align: center;
+}
+.sidemain img{
+    width: 50px;
+    height: 50px;
+    margin-left: 40%;
+}
+.sidemain header{
+    background-color:dodgerblue; 
+    width:100%;
+    height: 50px;
+}
+.sidemain .child{
+    float: left;
+    margin-left: 10px;
+}
+.sidemain .rchild{
+    float: right;
+}
+.sidemain .btn{
+    padding: 6px 4px;
+    margin-top: 8px;
+    margin-right: 0;
+    background:white;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    
+}
+.sidemain .btn:hover{
+    color: white;
+    background-color: dodgerblue;
+    border: 2px solid white;
+}
+.sidemain #search{
+    border-radius: 5px;
+    height: 30px;
+    width:50%;
+    margin-top: 8px;
+}
+.sidemain .footer{
+    border: 1px solid black;
+    background-color: grey;
+    height: 10vh;
+    margin-top: 100vh;
+}

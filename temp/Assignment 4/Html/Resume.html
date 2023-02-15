@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HTML</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .column1{
+            background-color: lightgray;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        /*  */
+        .nav a{
+            text-decoration: none;
+            color: black;
+            padding: 20px 50px;
+        }
+        .nav a:hover{
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+        }
+        .nav{
+            margin-top: 20px;
+        }
+        .icon{
+            display: none;
+        }
+       .column1{
+        padding: 20px 5%;
+       }
+       .leftbar{
+        width: 15%;
+        background-color: lightgrey;
+        padding: 2%;
+       }
+       .sidebar{
+        width: 80%;
+        padding: 20px;
+       }
+       summary{
+        list-style: none;
+       }
+       ul{
+       list-style: none;
+       }
+       li{
+        padding: 5px;
+       }
+       .column2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       }
+       .sidebar img{
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        table, th, td {
+            font-size: large;
+          border:1px solid black;
+          border-radius: 5px;
+         text-align: center;
+         border-collapse: collapse;
+        }
+       
+       @media screen and (min-width:320px) and (max-width:768px) {
+        .nav{
+            display: none;
+        }
+        .icon{
+            display: block;
+            color: black;
+            margin-left: 5px;
+            padding: 10px;
+            width: 95%;
+        }
+        .nav2{
+           display: block;
+            background-color: lightgray;
+        }
+        .resp{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            text-align:right;
+            width: 99%;
+            border-radius: 0;
+        }
+        .resp a:hover{
+            background-color: grey;
+            padding: 15px;
+        }
+        .leftbar{
+        width: 100%;
+        background-color: lightgrey;
+        padding: 2%;
+       }
+       .sidebar{
+        width: 100%;
+        padding: 10px;
+       }
+       .sidebar img{
+        width: 200px;
+       }
+       tr{
+        text-align: center;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: auto;
+       }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column1">
+            <div class="rxlogo" ><a href=""><img src="../Images/Logo_radix.png" class="rxlogo" alt="Radixweb" width="50px"></a></div>
+            <div class="nav2"> <a href="#" onclick="myFunction()" class="icon"><i class="fa fa-bars"></i></a></li></div>
+            <div class="nav" id="rnav">
+                <a href="../home.html">Home</a>
+                <a href="../Html/HTML-index.html" style="background-color: black; color:white; border-radius: 20px;">HTML</a>
+                <a href="./css/index-CSS.html">CSS</a>
+                <a href="./Bootstrap/index-Bootstrap.html">Bootstrap</a>
+                <a href="./JavaScript/index-js.html">JavaScript</a>
+                <a href="./Tailwind/index-tailwind.html">Tailwind</a>
+            </div>
+        </div>
+        <div class="column2">
+            <div class="leftbar">
+                <details>
+                    <summary>Day 1</summary>
+                     <ul>
+                        <li><details>
+                            <summary>Practice</summary>
+                            <ul>
+                                <li><a href="../Html/practiceTask1.html" target="_self">Practice 1</a></li>
+                                <li><a href="../Html/practicetask2.html" target="_self">Practice 2</a></li>
+                            </ul>
+                        </details></li>
+                        <li>
+                            <details>
+                                <summary>Assignment</summary>
+                                <ul>
+                                    <li><a href="./employeeDetails.html" target="_self">Assignment 1</a></li>
+                                    <li><a href="./Resume.html" target="_self">Assignment 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                     </ul>
+                </details>
+            </div>
+            <div class="sidebar">
+                <table>
+                    <tr>
+                        <td><img src="./avatar.png" alt=""></td>
+                        <td colspan="2"><h2>GOVIND JHA</h2>
+                            <h3>Full Stack Developer</h3>
+                            I am currently working with radixweb. At Radixweb i am working as Software Engineer Trainee.
+                            I have completed 3 months of internship as PHP Developer trainee in Orena Solutions vadodara.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Contact</h2>
+                            <h4>Phone</h4>
+                                <label for="">9106739843</label>
+                                <h3>Email</h3>
+                                <label for="">jhag2491@gmail.com</label>
+                                <h3>Address</h3>
+                                <label for="">D-103 Chandamani Residency Chankheda Ahmedabad</label><br><br><br><br><br><br><br><br><br><br>
+                        </td>
+                        <td>
+                            <div class="vll">
+                                <div><h2>Programming Languages Known</h2>
+                                    <dl>
+                                        <dt>HTML/CSS
+                                            <dd>Intermidiate</dd>
+                                        </dt><br>
+                                        <dt>JavaScript
+                                            <dd>Intermidiate</dd>
+                                        </dt><br>
+                                        <dt>PHP
+                                            <dd>Intermidiate</dd>
+                                        </dt><br>
+                                        <dt>C/C++
+                                            <dd>Intermidiate</dd>
+                                        </dt>br
+                                        <dt>MySql
+                                            <dd>Intermidiate</dd>
+                                        </dt>br
+                                        <dt>Python
+                                            <dd>Basic</dd>
+                                        </dt>
+                                    </dl></div><br><br><br><br><br>
+                            </div>
+                        </td>
+                        <td>
+                           <div class="vll vlr">
+                            <div>
+                                <h2>internship</h2>
+                            <ul>
+                                <li>Web Development Intern at LetsGrowMore</li><br>
+                                <li>PHP Developer intern At Orena solutions</li><br>
+                                <li>Software Engineer Trainee at Radixweb</li><br><br><br>
+                            </ul>
+                            <hr>
+                            <h2>Languages</h2>
+                            <ul>
+                                <li>Hindi</li>
+                                <li>English</li>
+                                <li>Gujarati</li>
+                                <li>Maithili</li>
+                            </ul></div><br>
+                           </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h2>Education</h2>
+                            <dl>
+                                <dt><h4>SSC</h4>
+                                    <dd>
+                                        <label for="">S.V Patel Eng. School, Vapi</label><br>
+                                        <label for="">03/2014 - 04/2017</label><br>
+                                        <label for="">10th GSEB Board -82.68%</label><br>
+                                    </dd>
+                                </dt>
+                                <dt><h4>HSC</h4>
+                                    <dd>
+                                        <label for="">S.V. Daman Eng. School</label><br>
+                                        <label for="">05/2017 - 03/2019</label><br>
+                                        <label for="">12th GSHEB Board -75.30%</label><br>
+                                    </dd>
+                                </dt>
+                                <dt><h4>B.TECH</h4>
+                                    <dd>
+                                        <label for="">Parul Institute of Engineering and Technology</label><br>
+                                        <label for="">04/2019 - present</label><br>
+                                        <label for="">CSE -8.1</label><br>
+                                    </dd>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td>
+                            <div class="vll">
+                                <div><h2>Personal Projects</h2>
+                                    <ul>
+                                        <li>Elecronic Hub Webpage</li><br>
+                                        <li>My Food Home Website</li><br>
+                                        <li>Instagram clone in Android Studio</li><br>
+                                        <li>Multiplicative Inverse Calculator Website</li><br>
+                                        <li>Notes Management Website</li><br>
+                                        <li>News Webpage</li><br>
+                                        <li>Health Care card website</li><br><br><br><br>
+                                    </ul></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="vll vlr">
+                                <div><h2>Certificates</h2>
+                                    <ul>
+                                        <li>The Fundamental of digital marketing of Google Digital Garage</li><br>
+                                        <li>Deep Learning with Python Of Great Learning</li><br>
+                                        <li>Participation Certificate in Pannel discussion of PIET</li><br>
+                                        <li>Learning Data Science Using Python of PIET</li><br>
+                                        <li>AR/VR Workshop of PIET</li><br><br><br><br><br><br><br><br>
+                                    </ul></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <h2>Project Video</h2>
+                    <video width="320" height="240" controls>
+                        <source src="./Project Vedio.webm" type="video/webm">
+                      </video>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("rnav");
+            if(x.className == "nav"){
+                x.className += " resp"
+            }
+            else{
+                x.className = "nav"
+            }
+        }
+    </script>
+</body>
+</html>

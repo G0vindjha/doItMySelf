@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./additionalTask3.css">
+    <title>CSS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .column1{
+            background-color: lightgray;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        /*  */
+        .nav a{
+            text-decoration: none;
+            color: black;
+            padding: 20px 50px;
+        }
+        .nav a:hover{
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+        }
+        .nav{
+            margin-top: 20px;
+        }
+        .icon{
+            display: none;
+        }
+       .column1{
+        padding: 20px 5%;
+       }
+       .leftbar{
+        width: 17%;
+        background-color: lightgrey;
+        padding: 2%;
+       }
+       summary{
+        list-style: none;
+       }
+       ul{
+       list-style: none;
+       }
+       li{
+        padding: 5px;
+       }
+       .column2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       }
+       .sidebar{
+        width: 80%;
+       }
+       .sidemain {
+        width: 100%;
+        margin: 2%;
+        border: 2px solid black;
+       }
+       .sidemain .btn{
+            padding: 10px 10px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 7px;
+        }   
+        .sidemain .btn:hover{
+            background-color: white;
+            color: orange;
+            border: 2px solid orange;
+        }
+       @media screen and (min-width:320px) and (max-width:768px) {
+        .nav{
+            display: none;
+        }
+        .icon{
+            display: block;
+            color: black;
+            margin-left: 5px;
+            padding: 10px;
+            width: 95%;
+        }
+        .nav2{
+           display: block;
+            background-color: lightgray;
+        }
+        .resp{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            text-align:right;
+            width: 99%;
+            border-radius: 0;
+        }
+        .resp a:hover{
+            background-color: grey;
+            padding: 15px;
+        }
+        .leftbar{
+        width: 100%;
+        background-color: lightgrey;
+        padding: 2%;
+       }
+       .sidebar{
+        width: 100%;
+       }
+       .sidemain{
+        width: 100%;
+        margin: 2% 0;
+       }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column1">
+            <div class="rxlogo" ><a href=""><img src="../Images/Logo_radix.png" class="rxlogo" alt="Radixweb" width="50px"></a></div>
+            <div class="nav2"> <a href="#" onclick="myFunction()" class="icon"><i class="fa fa-bars"></i></a></li></div>
+            <div class="nav" id="rnav">
+                <a href="../home.html">Home</a>
+                <a href="../Html/HTML-index.html">HTML</a>
+                <a href="./index-CSS.html" style="background-color: black; color:white; border-radius: 20px;">CSS</a>
+                <a href="./Bootstrap/index-Bootstrap.html">Bootstrap</a>
+                <a href="./JavaScript/index-js.html">JavaScript</a>
+                <a href="./Tailwind/index-tailwind.html">Tailwind</a>
+            </div>
+        </div>
+        <div class="column2">
+            <div class="leftbar">
+               <ul>
+                <li>
+                    <details>
+                        <summary> <strong>Day 1
+                        </strong> </summary>
+                         <ul>
+                            <li><details>
+                                <summary>Practice</summary>
+                                <ul>
+                                    <li><a href="../css/practicetask1.html" target="_self">Practice 1</a></li>
+                                    <li><a href="../css/practicetask2.html" target="_self">Practice 2</a></li>
+                                    <li><a href="../css/practice task3.html" target="_self">Practice 3</a></li>
+                                    <li><a href="../css/practicetask4.html" target="_self">Practice 4</a></li>
+                                </ul>
+                            </details></li>
+                            <li>
+                                <details>
+                                    <summary>Assignment</summary>
+                                    <ul>
+                                        <li><a href="../css/Resume1.html" target="_self">Assignment 1</a></li>
+                                        <li><a href="../css/Resume.html" target="_self">Assignment 2</a></li>
+                                        <li><a href="../css/Assignment2.html" target="_self">Assignment 3</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                         </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary> <strong>Day 2
+                        </strong> </summary>
+                         <ul>
+                            <li><details>
+                                <summary>Practice</summary>
+                                <ul>
+                                    <li><a href="../css/flexboxdirection.html" target="_self">Practice 1</a></li>
+                                    <li><a href="../css/practice_flexbox_galary.html" target="_self">Practice 2</a></li>
+                                    <li><a href="../css/bordercolorchange.html" target="_self">Practice 3</a></li>
+                                    <li><a href="../css/hideelement.html" target="_self">Practice 4</a></li>
+                                    <li><a href="../css/changefontsize.html" target="_self">Practice 5</a></li>
+                                    <li><a href="../css/Changebackground.html" target="_self">Practice 6</a></li>
+                                </ul>
+                            </details></li>
+                            <li>
+                                <details>
+                                    <summary>Assignment</summary>
+                                    <ul>
+                                        <li><a href="./Day2-assignmnet1.html" target="_self">Assignment 1</a></li>
+                                        <li><a href="./Day-2Assignment2.html" target="_self">Assignment 2</a></li>
+                                        <li><a href="./additionalTask1.html" target="_self">Assignment 3</a></li>
+                                        <li><a href="./additionalTask3.html" target="_self">Assignment 4</a></li>
+                                        <li><a href="../css/AdditionalTask4/" target="_self">Assignment 5</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                         </ul>
+                    </details>
+                </li>
+               </ul>
+            </div>
+            <div class="sidebar">
+               <div class="sidemain">
+                <div class="container">
+                    <div class="row">
+                        <div class="columns1">
+                            <div class="header">
+                                <div><i class="fa fa-shopping-cart" style="font-size:24px"></i> <label for="">&nbsp Shoping Cart</label></div>
+                                <div><i class="fa fa-user" style="font-size:24px"></i> <label for=""> &nbsp Sign In/ Register</label></div>
+                            </div>
+                        </div>
+                        <div class="columns2">
+                            <div class="nav1">
+                                <div><img src="./Screenshot from 2023-02-11 11-49-26.png" alt=""></div>
+                                <div><h1>512-219-8000</h1></div>
+                            </div>
+                            <div class="nav2">
+                                <a href="#">Yard Signs</a>
+                                <a href="#">Banners</a>
+                                <a href="#">Accesories</a>
+                                <a href="#">Gallery</a>
+                                <a href="#">About</a>
+                                <a href="#">Price</a>
+                                <a href="#">Materials</a>
+                                <a href="#">FAQ</a>
+                                <a href="#" style=" background-color: orange;color: white;">Custom Quote</a>
+                            </div>
+                        </div>
+                        <div class="columns3">
+                            <div class="card1">
+                                <h1 style="margin-bottom:5px;">Big Headline</h1>
+                                <h2 style="margin-bottom:5px;">Smaller Subhead Here</h2>
+                                <p style="margin-bottom:5px;">Refer media query videos from the CSS Video Section.You have one h1 and one paragraph in your page with blue color border. For all the media screen and query selector (maximum width 500px) it should be change to red color border.Create a menu list of the website.</p>
+                                <button class="btn"> Get Started</button>
+                            </div>
+                            <div class="card2">
+                                <form action="">
+                                    <input type="text" placeholder="First Name:">
+                                    <input type="text" placeholder="Last Name:"><br>
+                                    <input type="email" placeholder="Email:">
+                                    <input type="number" placeholder="Mobile Number"><br>
+                                    <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea><br>
+                                    <input class="btn" style="border-radius: 5px;width: 70%; margin: 10px 50px;" type="submit"  value="SEND">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="columns4">
+                            <div class="card4">
+                                <h2 style="margin-bottom:5px;">This is is where an Awesome Title Goes</h2>
+                                <p>Refer media query videos from the CSS Video Section.You have one h1 and one paragraph in your page with blue color border. For all the media screen and query selector (maximum width 500px) it should be change to red color border.</p>
+                            </div>
+                            <div class="card5">
+                                <button style="padding: 10px 20px;background-color: white;color: lightskyblue; border-radius: 5px;border: none;">Design it Now</button>
+                            </div>
+                        </div>
+                        <div class="columns5">
+                            <div class="card6">
+                                <video width="400" height="300" controls>
+                                    <source src="./Project Vedio.webm" type="video/webm">
+                                  </video>
+                            </div>
+                            <div class="card7">
+                                <h1 style="margin-bottom:5px;">Watch This</h1>
+                                <h3 style="margin-bottom:5px;">It's a video,yo!</h3>
+                                <p style="margin-bottom:10px;">Refer media query videos from the CSS Video Section.You have one h1 and one paragraph in your page with blue color border. For all the media screen and query selector (maximum width 500px) it should be change to red color border.</p>
+                                <button class="btn" style="padding: 10px 25px; border-radius: 5px;">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="columns6">
+                            <div class="card8">
+                                <img src="./Screenshot from 2023-02-11 16-10-27.png" alt="Project One" style="display: block;">
+                                <h3>Project One</h3>
+                                <p>Refer media query videos from the CSS Video Section.You have one h1 and one paragraph in your page with blue color border.</p>
+                            </div>
+                            <div class="card9"> 
+                                <img src="./Screenshot from 2023-02-11 16-10-36.png" alt="Project Two" style="display: block;">
+                                <h3>Project Two</h3>
+                                <p>Refer media query videos from the CSS Video Section.You have one h1 and one paragraph in your page with blue color border.</p>
+                            </div>
+                            <div class="card10">
+                                <img src="./Screenshot from 2023-02-11 16-10-43.png" alt="Project Three" style="display: block;">
+                                <h3>Project Three</h3>
+                                <p>Refer media query videos from the CSS Video Section.You have one h1 and one paragraph in your page with blue color border.</p>
+                            </div>
+                        </div>
+                        <div class="columns7">
+                            <div class="footer1">
+                                <div class="fcard"><label for=""><strong>Help</strong></label><br>
+                                    <label for="">Contact Us</label><br>
+                                    <label for="">F.A.Q.</label><br>
+                                    <label for="">Sitemap</label><br>
+                                    <label for="">Pricing</label><br>
+                                    <label for="">Redeem Promo</label><br>
+                                </div>
+                                <div class="fcard">
+                                    <label for=""><strong>Help</strong></label><br>
+                                    <label for="">Contact Us</label><br>
+                                    <label for="">F.A.Q.</label><br>
+                                    <label for="">Sitemap</label><br>
+                                    <label for="">Pricing</label><br>
+                                    <label for="">Redeem Promo</label><br>
+                                </div>
+                                <div class="fcard">
+                                    <label for=""><strong>Help</strong></label><br>
+                                    <label for="">Contact Us</label><br>
+                                    <label for="">F.A.Q.</label><br>
+                                    <label for="">Sitemap</label><br>
+                                    <label for="">Pricing</label><br>
+                                    <label for="">Redeem Promo</label><br>
+                                </div>
+                                <div class="fcard">
+                                    <label for=""><strong>Help</strong></label><br>
+                                    <label for="">Contact Us</label><br>
+                                    <label for="">F.A.Q.</label><br>
+                                    <label for="">Sitemap</label><br>
+                                    <label for="">Pricing</label><br>
+                                    <label for="">Redeem Promo</label><br>
+                                </div>
+                                <div class="fcard">
+                                    <label for=""><strong>Help</strong></label><br>
+                                    <label for="">Contact Us</label><br>
+                                    <label for="">F.A.Q.</label><br>
+                                    <label for="">Sitemap</label><br>
+                                    <label for="">Pricing</label><br>
+                                    <label for="">Redeem Promo</label><br>
+                                </div>
+                                <div class="fcard">
+                                    <label for=""><strong>Help</strong></label><br>
+                                    <label for="">Contact Us</label><br>
+                                    <label for="">F.A.Q.</label><br>
+                                    <label for="">Sitemap</label><br>
+                                    <label for="">Pricing</label><br>
+                                    <label for="">Redeem Promo</label><br>
+                                </div>
+                            </div>
+                            <div class="footer2">
+                                <label style="color: white;" for=""><Strong>Copyright &#169 SignDepotATX.com</Strong></label>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("rnav");
+            if(x.className == "nav"){
+                x.className += " resp"
+            }
+            else{
+                x.className = "nav"
+            }
+        }
+    </script>
+</body>
+</html>
